@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<title>Micah Simmons - Donation Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+		
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+<div class="wrapper">
+	<header>
+	<div id="head1">
+<h1>Micah Simmons | Professional Portfolio</h1>
+	</div>
+	<div id="head2">
+		<a href="tel:2104196255">(210) 419-6255</a>
+		<br>
+		<a href="#"><i class="fa fa-1g fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-1g fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-1g fa-instagram"></i></a>
+		<a href="mailto:simmonsmicah7@gmail.com"><i class="fa fa-1g fa-envelope"></i></a>
+			
+	</div>
+<div class="clear"></div>
+ 
+	</header>
+	<nav>
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="Resume.htm">Resume</a></li>
+        <li><a href="Interests.htm">Interests</a></li>
+        <li><a href="Donate.htm">Donate</a></li>
+    </ul>
+</nav>
+	<main>
+		<h2>Donation Form</h2>
+	<form>
+
+<fieldset>
+    <legend>Title</legend>
+
+    <input type="radio" id="mr" name="title" value="Mr." required>
+    <label for="mr">Mr.</label>
+
+    <input type="radio" id="mrs" name="title" value="Mrs.">
+    <label for="mrs">Mrs.</label>
+
+    <input type="radio" id="ms" name="title" value="Ms.">
+    <label for="ms">Ms.</label>
+
+    <input type="radio" id="mx" name="title" value="Mx.">
+    <label for="mx">Mx.</label>
+</fieldset>
+
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName" required>
+
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName" required>
+
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="date">Date:</label>
+<input type="date" id="date" name="date" required>
+
+<label for="phoneType">Phone Type:</label>
+<select id="phoneType" name="phoneType" required>
+    <option value="">Select Phone Type</option>
+    <option value="Mobile">Mobile</option>
+    <option value="Home">Home</option>
+    <option value="Work">Work</option>
+</select>
+
+<label for="phoneNumber">Phone Number:</label>
+<input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+<label for="price">Price ($):</label>
+<input type="number" id="price" name="price" min="1" step="0.01" required>
+
+<label for="cardNumber">Credit Card Number (Demo Only):</label>
+<input type="text" id="cardNumber" name="cardNumber"
+placeholder="Use test information only" required>
+
+<label for="securityCode">Security Code (Demo Only):</label>
+<input type="text" id="securityCode" name="securityCode"
+placeholder="Test code only" required>
+
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I agree to the terms and conditions.</label>
+
+<input type="submit" value="Submit Donation">
+
+
+
+	</form>
+
+	</main>
+
+	<div class="clear"></div>
+
+</div><!-- end wrapper -->
+
+
+	</body>
+
+</html>

@@ -1,0 +1,317 @@
+/*
+red: #B30011
+white: #F7F4F3
+Black: 000
+Blue: #F7F4F3
+Gray: #ADAEBD
+*/
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	background-color:#E8EDF2;
+	margin:1%;
+	padding:0;
+	}
+
+.wrapper {
+	background-color:#30343A;
+	width:88%;
+	margin:0 auto;
+	max-width:1000px;
+	padding:0;
+	display: flow-root;	
+}
+
+h1 { 
+	margin-top:0;
+	color:#F7F3EA;
+	font-family: "DM Sans", sans-serif;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 2px 2px 2px #999999;
+}
+
+h2, h3, h4 {
+	color:#52677D;
+	font-size:22px;
+}
+
+.contact {
+	color:#243447;
+	font-size:19px;
+}
+
+.yell {
+	font-weight:bold;
+	font-style:italic;
+	text-decoration:underline;
+	color:#243447;
+}
+
+.lean {
+	font-style:italic;
+	color:#243447;
+}
+
+.right { float:right; margin-right:0px; }
+.clear { clear:both; }
+
+.logos {
+	list-style-type:none;
+	margin:0; padding:0;
+	text-align:center;
+}
+
+.logos img:hover { opacity:.9; }
+
+.logos li {
+	margin:0; padding:0;
+	float:left;
+	width:33.33%;
+}
+
+img {
+	max-width:100%;
+}
+
+.logo {	
+	width:400px;
+	display: block;
+	margin: 0 auto; }
+
+
+.social {
+	width: 35%;
+	display: block;
+	margin: 0 0 20px 20px;
+	border-radius: 8px;
+	margin-top: 20px;
+	border: 2px solid #52677D;
+	box-sizing: border-box;
+	float: right;
+}
+
+a { text-decoration:none;
+	color:#000; }
+a:hover, a:active { text-decoration:underline; }
+
+header {
+	background-color:#30343A;
+	padding:6px;
+}
+
+header a, header a:visited {
+	color:#F7F3EA;
+}
+
+header a:hover, header a:active {
+	color:#B30011;
+}
+#head1 {
+	width:75%;
+	float:left;
+}
+
+#head2 {
+	width:25%;
+	text-align:right;
+	float:left;
+	color:#F7F4F3;
+}
+
+nav {
+	background-color:#B9C4D0;
+	width: 100%;
+	float: none;
+	padding:8px;
+	text-align:center;
+}
+
+nav a {
+	color: #30343A;
+	text-decoration: none;
+}
+
+nav a:hover {
+    opacity: .7;
+}
+
+
+nav li {
+	display: inline;
+	margin: 0 20px;
+}
+
+main {
+	width: 100%;
+	padding:0 3%;
+	float:none;
+	background-color:#F7F3EA;
+	font-family: "DM Sans", sans-serif;
+	line-height: 1.6;
+}
+
+main li {
+	margin-bottom: 8px;
+}
+
+footer {
+	background-color:#30343A;
+	color: #F7F3EA;
+	width: 100%;
+	padding:8px;
+	text-align:center;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #244236;
+}
+
+th {
+    background-color: #244236;
+    color: #F7F3EA;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E8E0D0;
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    color: #244236;
+    padding: 10px;
+}
+
+.coupon {
+	background-color: #F5F0E4;
+	border: 2px dashed #244236;
+	padding: 15px;
+	border-radius: 8px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.foodmenu {
+	columns: 2;
+	column-gap: 40px;
+}
+
+.foodmenu li {
+	break-inside: avoid;
+}
+
+
+@media screen and (max-width:760px) {
+	/* main { background-color:#007227; */
+	#head1 {
+		float:none;
+		width:100%;
+	}
+	#head2 {
+		float:none;
+		width:100%;
+		text-align:left;
+	}
+	nav {
+		float:none;
+		width:100%;
+	}
+	main {
+		float:none;
+		width:100%;
+		
+	}
+	.right {
+		float:none;
+	}
+	.logos li {
+		float:none;
+		margin:0 auto;
+		width:80%;
+	}
+	.foodmenu {
+		columns: 1;
+	}
+	.social {
+    		float: none;
+    		width: 80%;
+    		margin: 20px auto;
+	}
+
+}
+
+@media print {
+	header, nav, footer { display:none; }
+	main { width:100%; }
+	.shout { color:black; font-weight:bold; }
+	}
+
+form {
+    background-color: #E8EDF2;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px;
+    border: 1px solid #52677D;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #30343A;
+    margin-top: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #30343A;
+    color: #F7F3EA;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #52677D;
+}
+
+form fieldset {
+    border: 1px solid #52677D;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+form fieldset label {
+    display: inline;
+    margin-right: 15px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
